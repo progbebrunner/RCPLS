@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToolBAr</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_sync">Sync</string>
+</resources>
