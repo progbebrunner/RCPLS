@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/___rpsls" />
+
     <Button
         android:id="@+id/LizardButton"
         android:layout_width="wrap_content"
@@ -14,18 +24,20 @@
         android:layout_marginTop="500dp"
         android:width="120dp"
         android:height="60dp"
+        android:onClick="gameRPSLS"
         android:text="Ящерица"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/SpokButton"
+        android:id="@+id/SpockButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
         android:layout_marginEnd="48dp"
         android:width="120dp"
         android:height="60dp"
+        android:onClick="gameRPSLS"
         android:text="Спок"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,6 +61,7 @@
         android:layout_marginTop="340dp"
         android:width="120dp"
         android:height="60dp"
+        android:onClick="gameRPSLS"
         android:text="Камень"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,6 +74,7 @@
         android:layout_marginEnd="50dp"
         android:width="120dp"
         android:height="60dp"
+        android:onClick="gameRPSLS"
         android:text="Ножницы"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -72,9 +86,46 @@
         android:layout_marginTop="420dp"
         android:width="120dp"
         android:height="60dp"
+        android:onClick="gameRPSLS"
         android:text="Бумага"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/___rpsls" />
+
+    <TextView
+        android:id="@+id/textAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="100dp"
+        android:text="_______________"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/AgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="33dp"
+        android:width="150dp"
+        android:text="Новая игра"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAnswer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
